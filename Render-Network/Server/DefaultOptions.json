@@ -1,0 +1,9 @@
+{
+  "blenderVersion": "3.6.0",
+  "start": 0,
+  "end": 100,
+
+  "port": 8080,
+
+  "timeoutLimit": 600000
+}
