@@ -1,0 +1,2 @@
+curl -o index.js https://raw.githubusercontent.com/LmanTW/Render-Network/main/Assets/Server.js
+curl -o index.js https://raw.githubusercontent.com/LmanTW/Render-Network/main/Assets/Client.js

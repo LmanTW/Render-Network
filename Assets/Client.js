@@ -46,7 +46,7 @@ async function start() {
     let info = JSON.parse(await sendHttpRequest(options.network));
     console.log(`Installing Blender "${info.blenderVersion}"`);
     let release = info.blenderVersion.split(".").slice(0, 2).join(".");
-    exec(`wget https://download.blender.org/release/Blender${release}/blender-${info.blenderVersion}-linux-x64.tar.xz && tar xf blender-${info.blenderVersion}-linux-x64.tar.xz`);
+    exec(`curl -o Blender.tar.xz https://download.blender.org/release/Blender${release}/blender-${info.blenderVersion}-linux-x64.tar.xz && tar xf blender-${info.blenderVersion}-linux-x64.tar.xz`);
   } catch (error) {
     console.log(`Network Not Found "${options.network}"`);
     process.exit();
